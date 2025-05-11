@@ -13,6 +13,14 @@ body{
 }
 }
 
+@layer utilities{
+.material-symbols-rounded{
+  @apply w-[1em] h-[1em] overflow-hidden ;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+    }
+
+
 @layer components{
 
    .menu-btn {
@@ -20,7 +28,7 @@ body{
   }
 
   .navbar{
-    @apply absolute top-full right-0 mt-2 min-w-40 px-2 bg-zinc-50/10 rounded-2xl ring-inset ring-1 ring-zinc-50/5 scale-90 isolate blur-sm opacity-0 invisible transition-[opacity,transform,filter] duration-300;
+    @apply absolute top-full right-0 mt-2 min-w-40 px-2 bg-zinc-50/10 rounded-2xl ring-inset ring-1 ring-zinc-50/5 scale-90 isolate blur-sm opacity-0 invisible transition-[opacity,transform,filter] duration-300 md:static md:flex md:items-center md:mt-0 md:scale-100 md:opacity-100 md:visible md:bg-transparent md:backdrop-blur-2xl md:blur-[0] md:backdrop-saturate-150 md:backdrop-brightness-110 
   }
 
   .navbar.active{
@@ -36,7 +44,16 @@ body{
   }
 
   .navbar .active-box{
-    @apply absolute top-1 right-2 left-2 h-8 bg-zinc-50 rounded-lg  -z-10 transition-[top,teft] duration-300
+    @apply absolute  h-8 bg-zinc-50 rounded-lg  -z-10 transition-[top,teft] duration-300 md:transform-none md:top-0 md:left-0 md:w-full md:h-full md:rounded-2xl md:backdrop-blur-2xl
+  }
+
+  /* button */
+  .btn{
+    @apply max-w-max h-9 flex items-center gap-2 px-4 rounded-xl font-medium text-sm ring-1 ring-zinc-50/5 ring-inset transition-[background-color] 
+  }
+
+  .btn-secondary{
+    @apply bg-zinc-50 text-zinc-900/80 hover:bg-amber-500 hover:font-bold active:bg-zinc-50/80
   }
 }
 /**
