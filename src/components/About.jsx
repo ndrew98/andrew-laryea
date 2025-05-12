@@ -16,7 +16,7 @@ const About = () => {
     <section id="about" className="section">
       <div className="container">
         <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12">
-          <p className="text-lg text-zinc-300 mt-4 md:mb-8 md:text-xl  md:max-w-[60ch]">
+          <p className=" text-zinc-300 mt-4 md:mb-8 md:text-xl  md:max-w-[60ch]">
             Welcome! I&apos;m Andrew, a professional web developer with a knack
             for crafting visually stunning and highly functional websites,and
             enterprise applications. Combining creativity and technical
